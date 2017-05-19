@@ -20,6 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- To prevent launching MainActivity of ODK-collect this is needed-->
+        <activity
+            android:name="org.odk.collect.android.activities.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"
+            tools:node="remove">
+        </activity>
     </application>
 
 </manifest>
